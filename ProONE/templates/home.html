@@ -1,0 +1,319 @@
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        a {
+            color: black;
+            display: inline-block;
+            text-transform: none
+        }
+
+        i:hover {
+            color: green
+        }
+
+        input[type=submit]:hover {
+            color: #fff;
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="img">
+        {% if x %}
+        <div class="alert" style="text-align: center ;background:red;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!&nbsp;</strong>{{ x }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+
+        {% if s %}
+        <div class="alert" style="text-align: center ;background:yellow;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Congratulations!!&nbsp;</strong>{{ s }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if c %}
+        <div class="alert" style="text-align: center ;background:yellow;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Congratulations!!&nbsp;</strong>{{ c }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if d %}
+        <div class="alert" style="text-align: center ;background:red;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!!&nbsp;</strong>{{ d }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if e %}
+        <div class="alert" style="text-align: center ;background:red;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!!&nbsp;</strong>{{ e }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if f %}
+        <div class="alert" style="text-align: center ;background:yellow;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Alert!!&nbsp;</strong>{{ f }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if g %}
+        <div class="alert" style="text-align: center ;background:yellow;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Alert!!&nbsp;</strong>{{ g }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if h %}
+        <div class="alert" style="text-align: center ;background:red;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!!&nbsp;</strong>{{ h }}
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+
+        </script>
+        {% endif %}
+        {% if udata %}
+        {% for i in udata %}
+        <div class="alert" style="text-align: center ;background:yellow;position:absolute;width:100%;color:black;z-index:2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Remember!!&nbsp;</strong><b>Your Password :--->{{ i.password1 }}</b><br>
+            <p>This Message Will Expire in 20 seconds!!</p>
+        </div>
+        <script>
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 20000);
+
+        </script>
+        {% endfor %}
+        {% endif %}
+        <img src="{% static "images/wood.jpg" %}">
+    </div>
+
+
+    <div class="icon">
+        <a style="color: black;" data-toggle="tooltip" title="Sign In!">
+            <i class="fas fa-user fa-7x " data-toggle="modal" data-target="#myModal1"></i>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a data-toggle="tooltip" title="Sign Up!" href="/reg/"><i class="fas fa-file-alt fa-7x"></i></a>
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+        </script>
+    </div>
+
+    <!-- The  Login Modal -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center">Sign In HERE</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form method="POST" action="/login/" class="was-validated">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="user">Username:</label>
+                            <input type="text" class="form-control" id="user" placeholder="Enter username" name="user" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="reset" class="btn btn-primary">Clear</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Reset Password</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal3">Forget Password</button>
+
+                        </div>
+
+
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Reset Modal -->
+
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center">Reset Here</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form method="POST" action="/rst/" class="was-validated">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="uname">Enter Your Username:</label>
+                            <input type="email" class="form-control" id="user" placeholder="Your Username" name="user" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password1">Enter Your Old Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Your Old Password" name="pwd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="npassword1">Enter Your New Password:</label>
+                            <input type="password" class="form-control" id="npwd" placeholder="New Password" name="npwd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="npassword2">Confirm Password </label>
+                            <input type="password" class="form-control" id="npwd2" placeholder="Confirm Password" name="npwd2" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Clear</button>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Forget Password-->
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center">Enter Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form method="POST" action="/fgt/" class="was-validated">
+                        {% csrf_token %}
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="user" placeholder="Enter Your Username" name="user" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="number" class="form-control" id="rollno" placeholder="Enter Your Roll no." name="rollno" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Clear</button>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

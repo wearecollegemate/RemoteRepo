@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Member</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        table,
+        td,
+        th {
+            text-align: center;
+            overflow: auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col">
+            <a href="/user/" style="color: greenyellow; position: absolute;z-index:5;margin-top: 12px"><i class="fas fa-arrow-circle-left fa-2x"></i></a>
+            <h2 style="text-align: center;">Members</h2>
+            <input class="form-control" id="myInput" type="text" placeholder="Search.."><br>
+            <table class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th>College</th>
+                        <th>Branch</th>
+                        <th>Roll</th>
+                        <th>Name</th>
+                        <th>Photo</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    {% for i in alldata %}
+                    <tr>
+                        <td style="padding: 50px 0">{{i.college}}</td>
+                        <td style="padding: 50px 0">{{i.branch}}</td>
+                        <td style="padding: 50px 0">{{i.rollno}}</td>
+                        <td style="padding: 50px 0">{{i.name}}</td>
+                        <td><img src="/media/{{ i.image }}" style=" width:100px;height:120px;"></td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $("#myInput").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#myTable tr").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+
+        </script>
+
+    </div>
+</body>
+
+</html>

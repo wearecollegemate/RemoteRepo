@@ -1,0 +1,346 @@
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <script src="{% static 'script/swiper.min.js' %}"></script>
+    <style>
+        .story {
+            width: 80%;
+            height: 80%;
+            color: white;
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            border-radius: 10px
+        }
+
+        .container-fluid {
+            width: 100%;
+            position: relative;
+            background: #7d74f3;
+            margin-top: 0px;
+            height: 50px
+        }
+
+        .container2 {
+            height: 100%;
+            width: 15%;
+            text-align: center;
+            position: relative;
+            float: left;
+            background: olivedrab;
+            top: 0;
+            border: 1px solid olivedrab;
+            border-radius-right: 20px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        a {
+            color: black;
+            font-weight: 600;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .col {
+            text-align: center;
+            margin: 0px;
+            padding-top: 14px;
+        }
+
+        #txt {
+            width: 80%;
+            height: auto;
+            border: 0px solid black;
+            border-radius: 6px;
+            margin: 35px 5px 0;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        #txt2 {
+            width: 100%;
+            height: 100px;
+            border: 0px solid black;
+            border-radius: 6px;
+            margin: 35px 0 0;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        #frm {
+            text-align: center;
+            margin-top: 80%;
+        }
+
+        #frm2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #btncmt {
+            background: #69D0F7;
+            margin-top: 3px;
+            border: 1px solid #69D0F7;
+            width: 200px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #btncmt:hover {
+            background: green;
+            border: 1px solid green;
+            width: 200px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #id {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+
+        #cmtd {
+            font-family: sans-serif;
+            color: #90bbe8;
+            font-size: 9px
+        }
+
+        .box.arrow-top {
+            margin-top: 40px;
+        }
+
+
+        .box {
+            width: 82%;
+            height: auto;
+            background-color: #035dbd;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+            margin: 45px 20px -17px;
+            ;
+            float: left;
+            border-radius: 16px;
+
+        }
+
+        .boxa {
+            width: 82%;
+            height: auto;
+            background-color: white;
+            color: #000000;
+            padding: 20px;
+            position: relative;
+            margin: 45px 20px -17px;
+            ;
+            float: left;
+            border-radius: 16px;
+        }
+
+        .boxa.arrow-lefta:after {
+            content: " ";
+            position: absolute;
+            left: -14px;
+            top: 15px;
+            border-top: 15px solid transparent;
+            border-right: 15px solid white;
+            border-left: none;
+            border-bottom: 15px solid transparent;
+        }
+
+        #cmnt,
+        .fontstory {
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .box.arrow-right:after {
+            content: " ";
+            position: absolute;
+            right: -15px;
+            top: 15px;
+            border-top: 15px solid transparent;
+            border-right: none;
+            border-left: 15px solid #035dbd;
+            border-bottom: 15px solid transparent;
+        }
+
+        .example {
+            overflow-y: scroll;
+            overflow-x: hidden
+                /* Add the ability to scroll */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .example::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE and Edge */
+        .example {
+            -ms-overflow-style: none;
+        }
+
+        #fdk,
+        #lgt,
+        #udt {
+            color: black;
+            padding: auto;
+            margin-top: 30px;
+            background-position: top left
+        }
+
+        #fdk:hover {
+            color: white
+        }
+
+        #lgt:hover {
+            color: red
+        }
+
+        #udt:hover {
+            color: #0584ff
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="story" style="overflow-x: scroll;background: #6495ed">
+        <div class="pad">
+            <div class="swiper-container example">
+                <div class="swiper-wrapper">
+                    {% for i in sdata %}
+                    <div class="swiper-slide">
+                        <div class="imgBx example">
+
+                            <h6 class="boxa arrow-lefta"><b>Query : </b>{{ i.story }}<br>
+                                <p id="cmtd">{{i.upost}}&ensp;({{i.date}})</p>
+                            </h6><br>
+
+
+                            {% for j in cdata %}
+                            {% if i.id == j.storydata_id %}
+                            <h6 id="cmnt" class="box arrow-right"><b>Comment : </b>{{ j.cmt }}<br>
+                                <p id="cmtd">{{j.cpost}}&ensp;({{j.cdate}})</p>
+                            </h6>
+                            {% endif %}
+                            {% endfor %}
+
+                            <form id="frm" method="POST" action="/cmt/" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <textarea id="id" name="id">{{ i.id }}</textarea>
+                                <textarea id="id" name="story">{{ i.story }}</textarea>
+                                <textarea id="id" name="upost">{{ i.upost }}</textarea>
+                                <textarea id="txt" name="cmt" placeholder="Comment here" required></textarea>
+                                <button id="btncmt" type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    loop: true,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 60,
+                        stretch: 0,
+                        depth: 200,
+                        modifier: 5,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                });
+
+            </script>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            {#         dfdfdfd#}
+            <div class="col"><button class="btn btn-success" data-toggle="modal" data-target="#myModal3">QueryPad</button></div>
+            <!StoryPad Modal----->
+                <div class="modal fade" id="myModal3">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="width: 100%;position: relative">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">QueryPad</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body jumbotron" style="width:100%;height: 100%;position: relative">
+                                <form id="frm2" method="POST" action="/story/" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <textarea id="txt2" class="fontstory example" name="story" placeholder="You can Query here!!!" required></textarea>
+                                    <button id="btncmt" type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"><a href="https://drive.google.com/file/d/0Bx16wct4sLuOc3RhcnRlcl9maWxl/view?usp=sharing">LIBRARY</a></div>
+                <div class="col"><a href="/member/">COLLEGEMATE</a></div>
+        </div>
+    </div>
+    <div class="container2">
+        {% for i in img %}
+        <img src="/media/{{ i.image }} " style="border-radius: 26px; width: 52px;height: 52px;">
+        {% endfor %}
+        <div><a href="/logout/" data-toggle="tooltip" title="Log Out!"><i id="lgt" class="fas fa-power-off fa-3x" aria-hidden="true"></i></a><br>
+            <a href="/feed/" data-toggle="tooltip" title="Feedback"><i id="fdk" class="fas fa-comment fa-3x" aria-hidden="true"></i></a><br>
+            <a href="/update/" data-toggle="tooltip" title="Update Profile Image"><i id="udt" class="fas fa-cog fa-3x" aria-hidden="true"></i></a>
+            <script>
+                $(document).ready(function() {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+
+            </script>
+        </div>
+
+        <div class="develop" style="position: fixed; background: #000000;bottom: 0;width:100%;z-index: 2">
+            <p class="fontstory" style="color: white;text-align: center"> ©Developed by Bce Alumni</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<!--<!>-->

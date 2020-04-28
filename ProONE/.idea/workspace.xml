@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcdb8e9b-97fe-4fcd-8b32-2e5b0d98d141" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="Setup Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RDuzZWqNsWb3VTwNrQNDFOX6o6" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.ProONE">
+    <configuration name="try.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProONE/templates/try.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProONE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/proapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/proapp/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProONE" type="Python.DjangoServer" factoryName="Django server">
+      <module name="ProONE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="ProONE.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.try.html" />
+        <item itemvalue="Python.models" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@144d2f90" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcdb8e9b-97fe-4fcd-8b32-2e5b0d98d141" name="Default Changelist" comment="" />
+      <created>1569214250805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569214250805</updated>
+      <workItem from="1569214263243" duration="5082000" />
+      <workItem from="1569221824145" duration="5812000" />
+      <workItem from="1569228579692" duration="23704000" />
+      <workItem from="1569304721843" duration="177000" />
+      <workItem from="1569312615134" duration="9915000" />
+      <workItem from="1569325713188" duration="30828000" />
+      <workItem from="1569381929011" duration="18486000" />
+      <workItem from="1569411897812" duration="746000" />
+      <workItem from="1569413945562" duration="12725000" />
+      <workItem from="1569469374038" duration="66607000" />
+      <workItem from="1569561379832" duration="13959000" />
+      <workItem from="1569580350982" duration="16546000" />
+      <workItem from="1569603773166" duration="18560000" />
+      <workItem from="1569641950186" duration="13124000" />
+      <workItem from="1569673819247" duration="11912000" />
+      <workItem from="1569692071581" duration="28195000" />
+      <workItem from="1569735940393" duration="2044000" />
+      <workItem from="1569743135065" duration="8452000" />
+      <workItem from="1569759863692" duration="7783000" />
+      <workItem from="1569770236444" duration="6649000" />
+      <workItem from="1569779954115" duration="3192000" />
+      <workItem from="1569796514079" duration="784000" />
+      <workItem from="1569837733228" duration="443000" />
+      <workItem from="1569838962347" duration="13210000" />
+      <workItem from="1570033101045" duration="1371000" />
+      <workItem from="1570036164419" duration="893000" />
+      <workItem from="1570094524123" duration="122000" />
+      <workItem from="1571114035970" duration="343000" />
+      <workItem from="1572767235453" duration="607000" />
+      <workItem from="1574864258147" duration="382000" />
+      <workItem from="1577331521810" duration="626000" />
+      <workItem from="1577345378084" duration="166000" />
+      <workItem from="1584175454303" duration="2000" />
+      <workItem from="1585904092491" duration="93000" />
+      <workItem from="1586264775203" duration="484000" />
+      <workItem from="1587398607925" duration="471000" />
+      <workItem from="1587533555939" duration="779000" />
+      <workItem from="1587556810030" duration="563000" />
+      <workItem from="1587633262749" duration="365000" />
+      <workItem from="1587633676124" duration="1699000" />
+      <workItem from="1587790365517" duration="1804000" />
+      <workItem from="1587793501573" duration="710000" />
+      <workItem from="1587794467165" duration="1069000" />
+      <workItem from="1587795888759" duration="1501000" />
+      <workItem from="1587816221602" duration="1445000" />
+      <workItem from="1587817721187" duration="1523000" />
+      <workItem from="1587819295348" duration="1771000" />
+      <workItem from="1587821874484" duration="1219000" />
+      <workItem from="1587823613804" duration="170000" />
+      <workItem from="1587823927203" duration="1505000" />
+      <workItem from="1587827810431" duration="979000" />
+      <workItem from="1587830747879" duration="548000" />
+      <workItem from="1587831998582" duration="204000" />
+      <workItem from="1587832376163" duration="758000" />
+      <workItem from="1587834525621" duration="818000" />
+      <workItem from="1587835728737" duration="1615000" />
+      <workItem from="1587837578530" duration="1584000" />
+      <workItem from="1587839233809" duration="1371000" />
+      <workItem from="1587840845481" duration="1483000" />
+      <workItem from="1587842374993" duration="2042000" />
+      <workItem from="1587844560465" duration="754000" />
+      <workItem from="1587873503659" duration="1460000" />
+      <workItem from="1587875444654" duration="1232000" />
+      <workItem from="1587876714517" duration="1667000" />
+      <workItem from="1587878859521" duration="594000" />
+      <workItem from="1587879960674" duration="1741000" />
+      <workItem from="1587881804598" duration="1398000" />
+      <workItem from="1587886264097" duration="1705000" />
+      <workItem from="1587888067524" duration="1504000" />
+      <workItem from="1587889878741" duration="579000" />
+      <workItem from="1587891340456" duration="1497000" />
+      <workItem from="1587892870478" duration="477000" />
+      <workItem from="1587895576593" duration="737000" />
+      <workItem from="1587896350366" duration="1854000" />
+      <workItem from="1587898261872" duration="1541000" />
+      <workItem from="1587902150329" duration="1697000" />
+      <workItem from="1587903892497" duration="1782000" />
+      <workItem from="1587905767142" duration="1250000" />
+      <workItem from="1587907060543" duration="1773000" />
+      <workItem from="1587908879103" duration="1078000" />
+      <workItem from="1587910338108" duration="1621000" />
+      <workItem from="1587914903543" duration="1694000" />
+      <workItem from="1587916651200" duration="1695000" />
+      <workItem from="1587918468943" duration="1627000" />
+      <workItem from="1587920162926" duration="1162000" />
+      <workItem from="1587921396089" duration="1777000" />
+      <workItem from="1587923246761" duration="1771000" />
+      <workItem from="1587925085726" duration="1767000" />
+      <workItem from="1587926922058" duration="1867000" />
+      <workItem from="1587928948306" duration="1176000" />
+      <workItem from="1587930166559" duration="1319000" />
+      <workItem from="1587960054304" duration="1043000" />
+      <workItem from="1587961158947" duration="1752000" />
+      <workItem from="1587962963189" duration="1768000" />
+      <workItem from="1587972938381" duration="1767000" />
+      <workItem from="1587974763692" duration="1785000" />
+      <workItem from="1587976692376" duration="2064000" />
+      <workItem from="1587978873458" duration="1969000" />
+      <workItem from="1587980930439" duration="1780000" />
+      <workItem from="1587983089254" duration="1152000" />
+      <workItem from="1587984939766" duration="443000" />
+      <workItem from="1587986948276" duration="1774000" />
+      <workItem from="1587988791077" duration="1789000" />
+      <workItem from="1587990623941" duration="1120000" />
+      <workItem from="1587994117802" duration="426000" />
+      <workItem from="1587995195990" duration="1360000" />
+      <workItem from="1587996623242" duration="1522000" />
+      <workItem from="1588001924811" duration="1750000" />
+      <workItem from="1588003891624" duration="1771000" />
+      <workItem from="1588005715849" duration="1774000" />
+      <workItem from="1588007543747" duration="1021000" />
+      <workItem from="1588009137491" duration="1324000" />
+      <workItem from="1588010621068" duration="1328000" />
+      <workItem from="1588012926363" duration="1782000" />
+      <workItem from="1588014777374" duration="897000" />
+      <workItem from="1588015792645" duration="773000" />
+      <workItem from="1588016594796" duration="1783000" />
+      <workItem from="1588018410705" duration="1954000" />
+      <workItem from="1588020398173" duration="1786000" />
+      <workItem from="1588022220393" duration="1813000" />
+      <workItem from="1588024184282" duration="1792000" />
+      <workItem from="1588026051699" duration="305000" />
+      <workItem from="1588039750737" duration="748000" />
+      <workItem from="1588046188898" duration="1714000" />
+      <workItem from="1588047957682" duration="1784000" />
+      <workItem from="1588049773484" duration="1789000" />
+      <workItem from="1588051595349" duration="1786000" />
+      <workItem from="1588053429698" duration="1785000" />
+      <workItem from="1588055251350" duration="1034000" />
+      <workItem from="1588058993348" duration="1701000" />
+      <workItem from="1588060756602" duration="1768000" />
+      <workItem from="1588062614898" duration="1775000" />
+      <workItem from="1588064466914" duration="1778000" />
+      <workItem from="1588066371093" duration="1773000" />
+      <workItem from="1588068197547" duration="1529000" />
+      <workItem from="1588069831191" duration="171000" />
+      <workItem from="1588070120654" duration="1765000" />
+      <workItem from="1588071937589" duration="1769000" />
+      <workItem from="1588073772653" duration="1775000" />
+      <workItem from="1588075670476" duration="106000" />
+      <workItem from="1588075854864" duration="1253000" />
+      <workItem from="1588077222979" duration="178000" />
+      <workItem from="1588077749679" duration="1777000" />
+      <workItem from="1588079581740" duration="1773000" />
+      <workItem from="1588081396257" duration="1649000" />
+      <workItem from="1588083436934" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ProONE/urls.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProONE$models.coverage" NAME="models Coverage Results" MODIFIED="1587634859018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proapp" />
+  </component>
+</project>
